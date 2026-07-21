@@ -39,3 +39,55 @@ switch (placar) {
     default:
     console.log('ninguem ganho');
 }
+
+// Estruturas de repetição
+
+// For - executa uma instrução até que seja falsa
+
+let array = ['valor1', 'valor2', 'valor3', 'valor4', 'valor5']
+
+let Object = {propriedade1: 'valor1', propriedade2: 'valor2', propriedade3: 'valor3'}
+
+for(let indice = 0; indice < array.length; indice++) {
+    console.log(indice);
+};
+
+// For/in - excuta repetição a partir de uma propriedade
+// com array
+for (let i in array) {
+    console.log(i);
+};
+
+// com ebject
+for (i in Object) {
+    console.log(i);
+}
+
+
+// For/of -  executa uma repetição a apartir de uma valor
+for (i of array) {
+    console.log(i);
+};
+
+// com object é diferente pois objetos não são iteraveis, mas tem como:
+for (i of Object.propriedade1) {
+    console.log(i);
+};
+
+
+// While
+
+var a = 0;
+
+while (a < 10) {
+    a++;
+    console.log(a);
+
+}
+
+// Do/While
+
+do {
+    a++;
+    console.log(a);
+} while (a < 10)
